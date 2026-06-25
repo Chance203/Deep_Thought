@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #f4f8f4;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #5f6b7a;
+  --primary: #3a7a57;
+  --primary-dark: #28563d;
+  --border: #d7e4da;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+    linear-gradient(to right, rgba(47, 111, 79, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(47, 111, 79, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(58, 122, 87, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(40, 86, 61, 0.14), transparent 25%),
+    linear-gradient(180deg, #f4f8f4 0%, #eef5ef 45%, #e7f0e8 100%);
+  background-size:
+    auto,
+    20px 20px,
+    20px 20px,
+    auto,
+    auto,
+    auto;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+header h1 {
+  font-size: 5.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #e6eef6;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.72);
+  margin-bottom: 24px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(20, 40, 30, 0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.profile-links {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.profile-links li {
+  margin-bottom: 0;
+}
+
+.profile-links a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-links a:hover {
+  background: var(--primary-dark);
+}
+
+.section-intro {
+  margin-bottom: 22px;
+  color: var(--muted);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(20, 40, 30, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(20, 40, 30, 0.14);
+}
+
+.project-card h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tags span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(47, 111, 79, 0.12);
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-link {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  background: var(--primary-dark);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 45px 16px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  .profile-links {
+    flex-direction: column;
+  }
+
+  .profile-links a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .project-link {
+    width: 100%;
+    text-align: center;
+  }
+}
