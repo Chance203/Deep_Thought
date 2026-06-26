@@ -5,6 +5,11 @@
 ├── style.css         # Visual styling
 ├── script.js         # Optional future interactivity
 └── README.md         # Notes about the project
+
+# To Start the site run the following
+ - python3 -m http.server 8000
+
+
 # Personal Portfolio Website
 
 This is the starting structure for my personal website.

@@ -13,6 +13,23 @@
 </head>
 
 <body>
+  <div class="options-menu">
+  <button id="options-toggle" class="options-toggle" aria-label="Open options menu">
+    ☰
+  </button>
+
+  <div id="options-panel" class="options-panel">
+    <button id="theme-toggle" class="theme-toggle">
+      🌙 Dark Mode
+    </button>
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
   <header>
   <h1>Chance Valdez</h1>
   <p>IT Support | Systems Administration | Creative Professional</p>
@@ -24,13 +41,10 @@
     <a href="#contact">Contact</a>
   </nav>
 
-    <!-- Future expansion:
-         Add a navigation menu here when the site grows.
-         Example: Home, Resume, Projects, Contact, Art Business -->
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="reveal">
   <h2>About Me</h2>
       <p>
   I am building this website as a personal portfolio to highlight my work in
@@ -38,7 +52,7 @@
   creative projects. This site will continue to grow as I add new projects,
   experience, and resources over time.
   <br>
-  Professional IT Support, Ametuer Balloon Twisting Hobbyist, and Supporter of all dad jokes
+  Professional IT Support, Amatuer Balloon Twisting Hobbyist, and Supporter of all dad jokes
 </p>
 
 <p>
@@ -58,7 +72,7 @@
   </li>
   <li>
     <a href="https://chancevaldez.com" target="_blank" rel="noopener noreferrer">
-      chancevaldez.com
+      Domain
     </a>
   </li>
 </ul>
@@ -68,26 +82,61 @@
            This can be tailored toward IT, systems administration, or art/business. -->
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Microsoft 365 Administration</li>
-        <li>Active Directory</li>
-        <li>Windows Server</li>
-        <li>Networking</li>
-        <li>Technical Support</li>
-      </ul>
+    <section id="skills" class="reveal">
+  <h2>Skills</h2>
 
-      <!-- Future expansion:
-           Turn this into skill categories:
-           - Systems Administration
-           - Networking
-           - Cloud / Microsoft 365
-           - Customer Support
-           - Creative Services -->
-    </section>
+  <p class="section-intro">
+    A practical overview of the technical, troubleshooting, customer service,
+    and creative skills I use to solve problems, support people, and continue growing professionally.
+  </p>
 
-    <section id="projects">
+  <div class="skills-layout">
+
+    <div class="skill-group">
+      <h3>Technical Troubleshooting</h3>
+      <p>
+        Confident diagnosing hardware, software, account access, workstation,
+        and user support issues while learning new tools and technical ecosystems quickly.
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>Customer Support</h3>
+      <p>
+        Comfortable working directly with users, providing patient and dedicated service
+        while resolving complicated technical issues in a clear and timely manner.
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>Ticket Management</h3>
+      <p>
+        Three years of Tier 1 Technician experience managing roughly 20–30 tickets daily,
+        balancing efficiency, documentation, follow-through, and quality of support.
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h3>Professional Growth</h3>
+      <p>
+        Actively growing my technical knowledge and building a project portfolio to better
+        document my progress, experience, and hands-on skills.
+      </p>
+    </div>
+
+    <div class="skill-group featured-skill">
+      <h3>Creative Problem Solving</h3>
+      <p>
+        I enjoy creative and hands-on challenges, including balloon twisting, volunteer work,
+        solving a Rubik’s cube in under three minutes, playing ukulele, building and repairing
+        computers, and explaining complex technical ideas through analogies and metaphors.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <section id="projects" class="reveal">
   <h2>Projects</h2>
 
   <p class="section-intro">
@@ -97,64 +146,53 @@
   <div class="project-grid">
 
     <article class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A personal website built with HTML, CSS, GitHub, and GitHub Pages.</p>
+      <h3>Personal Website</h3>
+      <p>Building and refining my personal website as a hands-on project to strengthen my web and technical skills while creating a central place to document projects, track growth, and showcase the knowledge and experience I’ve gained throughout my career.</p>
       <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
       </div>
-      <a href="https://chancevaldez.com" target="_blank" rel="noopener noreferrer" class="project-link">View</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Website.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
     </article>
 
     <article class="project-card">
       <h3>Harvard CS50</h3>
-      <p>Coursework focused on programming, problem solving, and computer science fundamentals.</p>
+      <p>Working through Harvard’s CS50 course to strengthen my computer science fundamentals, expand my technical knowledge, and become a more effective and efficient technical professional.</p>
       <div class="project-tags">
-        <span>CS50</span>
-        <span>Programming</span>
       </div>
+      <br>
       <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" rel="noopener noreferrer" class="project-link">Details</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/CS50%20Studies.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
     </article>
 
     <article class="project-card">
-      <h3>Certifications</h3>
-      <p>Professional development through CompTIA and ITIL certification training.</p>
+      <h3>Domain Management</h3>
+      <p>Learning how to manage and make the most of my domain by documenting setup, changes, experiments, and new ways I can use it as my website and projects grow.</p>
       <div class="project-tags">
-        <span>A+</span>
-        <span>Network+</span>
-        <span>ITIL 4</span>
       </div>
-      <a href="https://www.linkedin.com/in/leonard-valdez-239590a0/details/certifications/" target="_blank" rel="noopener noreferrer" class="project-link">View</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Domain.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
     </article>
 
     <article class="project-card">
-      <h3>IT Support Work</h3>
-      <p>Hands-on experience supporting users, systems, access, devices, and technical issues.</p>
+      <h3>Freelance IT Support Work</h3>
+      <p>A collection of IT projects completed for family, friends, and independent clients, documenting the technical solutions, troubleshooting, and customer support skills developed through hands-on work. This section serves as a portfolio of real-world experience across problem-solving, system support, and client-focused service.</p>
       <div class="project-tags">
-        <span>Helpdesk</span>
-        <span>Support</span>
       </div>
-      <a href="#" class="project-link">Coming Soon</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Freelance%20IT%20Work.txt" class="project-link">Log</a>
     </article>
 
     <article class="project-card">
-      <h3>Systems Practice</h3>
-      <p>Future documentation for Windows Server, Active Directory, and Microsoft 365 projects.</p>
+      <h3>Balloon Twisting</h3>
+      <p>A space to document my growth as a balloon artist—tracking new designs, techniques, problem-solving, and lessons learned along the way. This section highlights the challenges, creative adjustments, and skill development involved in improving both the quality of my work and the experience I provide for clients.</p>
       <div class="project-tags">
-        <span>Server</span>
-        <span>M365</span>
       </div>
-      <a href="#" class="project-link">Coming Soon</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Balloon%20Twisting.txt" class="project-link">Log</a>
     </article>
 
     <article class="project-card">
-      <h3>Creative Work</h3>
-      <p>A future space for caricature work, balloon twisting, event services, and creative projects.</p>
+      <h3>Goals</h3>
+      <p>A dedicated space to document the personal and professional goals I’m actively working toward. This section helps me track progress, stay intentional about growth, and reflect on the milestones, habits, and lessons that shape both my career development and personal life.</p>
       <div class="project-tags">
-        <span>Art</span>
-        <span>Events</span>
       </div>
-      <a href="#" class="project-link">Coming Soon</a>
+      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Goals.txt" class="project-link">Log</a>
     </article>
 
   </div>
@@ -168,9 +206,16 @@
            - Caricature business page -->
     </section>
 
-    <section id="contact">
+    <section id="contact" class="reveal">
       <h2>Contact</h2>
-      <p>Email: valdezchancer@gmail.com
+        <div class="contact-buttons">
+          Email:
+    <a href="mailto:valdezchancer@gmail.com" class="contact-button">
+        valdezchancer@gmail.com
+    </a>
+</div>
+
+<p id="copy-message"></p>
       <br>Phone: 231.327.8398
       </p>
 
@@ -187,7 +232,12 @@
     <p>&copy; 2026 Chance Valdez. All rights reserved.</p>
   </footer>
 
-  <!-- Optional JavaScript file for future features -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+ ↑
+</button>
+  
+  <!-- JavaScript file for future features -->
   <script src="script.js"></script>
+
 </body>
 </html>
