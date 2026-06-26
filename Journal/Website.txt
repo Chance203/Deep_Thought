@@ -5,5 +5,7 @@ Journal Entries for progress on building a website
     This is to be the first journal entry for the Website project journal/blog tracking my progress.
 
     Additional Features added, Dark Mode, Menu, Scroll to Reveal, Content Reviewed and improved, Code organized with headers, Configured txt files for logging progress on Projects
+    Filling out Gallery with some general balloon and Tech related photos. Troubleshooting issue caused by gallery.html being in a lower directory than the main webpage. Had to update link in index.html.
+    Adding to style.css for the thumbnail gallery, and Lightbox. Committing changes after successful test of the images.
         -6/25/26
     

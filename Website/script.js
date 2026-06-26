@@ -91,6 +91,35 @@ if (optionsToggle && optionsPanel) {
   });
 }
 
+/* ========================= */
+/* Image Gallery Lightbox */
+/* ========================= */
+
+const galleryThumbnails = document.querySelectorAll(".gallery-thumbnail");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxClose = document.getElementById("lightbox-close");
+
+galleryThumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    lightboxImage.src = thumbnail.src;
+    lightboxImage.alt = thumbnail.alt;
+    lightbox.classList.add("active");
+  });
+});
+
+lightboxClose.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+  lightboxImage.src = "";
+});
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    lightbox.classList.remove("active");
+    lightboxImage.src = "";
+  }
+});
+
 // ========================================
 // FUTURE FEATURES
 // ========================================

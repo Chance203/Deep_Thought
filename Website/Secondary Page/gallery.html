@@ -1,63 +1,130 @@
-<head>
-  <meta charset="UTF-8" />
-
-  <!-- Makes the site work better on phones/tablets -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Chance Valdez | Portfolio</title>
-
-  <!-- Connects this HTML file to the CSS styling file -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
 
-    <title>Image Library</title>
+    <!-- Makes the site work better on phones/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+    <title>Image Library | Chance Valdez</title>
+
+    <!-- Connects this page to the shared CSS -->
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
 
-<header>
+    <!-- ========================= -->
+    <!-- Options Menu -->
+    <!-- ========================= -->
 
-    <h1>Image Library</h1>
+    <div class="options-menu">
+        <button id="options-toggle" class="options-toggle" aria-label="Open options menu">
+            ☰
+        </button>
 
-    <p>A growing collection of photos documenting my projects, technical work, and creative endeavors.</p>
+        <div id="options-panel" class="options-panel">
 
-    <nav>
-        <a href="index.html">← Back to Home</a>
-    </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                🌙 Dark Mode
+            </button>
 
-</header>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#skills">Skills</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
 
-<main>
+        </div>
+    </div>
 
-<section class="gallery-page">
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
 
-    <h2>Coming Soon</h2>
+    <header>
 
-    <p>This page will eventually contain categorized galleries for:</p>
+        <h1>Image Library</h1>
 
-    <ul>
-        <li>Balloon Art</li>
-        <li>Caricatures</li>
-        <li>Computer Builds</li>
-        <li>Networking Projects</li>
-        <li>Website Development</li>
-        <li>Behind the Scenes</li>
-    </ul>
+        <p>
+            A growing collection of photos documenting my projects,
+            technical work, and creative endeavors.
+        </p>
 
-</section>
+        <nav>
+            <a href="../index.html">← Back to Home</a>
+        </nav>
 
+    </header>
+
+    <!-- ========================= -->
+    <!-- Main Content -->
+    <!-- ========================= -->
+
+    <main>
+  <section class="gallery-page reveal">
+    <h2>Image Library</h2>
+
+    <p>
+      Click a thumbnail to view the full-size image.
+    </p>
+
+    <div class="gallery-grid">
+
+    <img src="../Images/790329-R1-12-32.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/2018 June.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/IMG_3289.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/IMG_20141211_120349.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/Mobile uploads.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/Profile pictures (1).jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/PXL_20250423_160942782.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/PXL_20250423_161454817.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/PXL_20250423_180455378.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+    <img src="../Images/PXL_20250423_181538729.jpg" class="gallery-thumbnail" alt="Gallery Image">
+
+</div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close image">
+      ×
+    </button>
+
+    <img id="lightbox-image" src="" alt="Expanded gallery image" />
+  </div>
 </main>
 
-<script src="script.js"></script>
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+        <p>&copy; 2026 Chance Valdez. All rights reserved.</p>
+    </footer>
+
+    <!-- ========================= -->
+    <!-- Back to Top Button -->
+    <!-- ========================= -->
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- ========================= -->
+    <!-- JavaScript -->
+    <!-- ========================= -->
+
+    <script src="../script.js"></script>
 
 </body>
 
