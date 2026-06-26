@@ -3,3 +3,7 @@ Journal Entries for progress on building a website
     Some edits worked while others such as trying to set the card's background to transparent have not been successful.
     I have decided to build this site organically as I work on projects and grow my technical skills to show improvement over time.
     This is to be the first journal entry for the Website project journal/blog tracking my progress.
+
+    Additional Features added, Dark Mode, Menu, Scroll to Reveal, Content Reviewed and improved, Code organized with headers, Configured txt files for logging progress on Projects
+        -6/25/26
+    
