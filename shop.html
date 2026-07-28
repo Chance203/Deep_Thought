@@ -10,25 +10,106 @@
 
   <meta
     name="description"
-    content="Shop original apparel, accessories, gifts, and designs from KoalaTeaTech."
+    content="Shop original apparel, accessories, gifts, and print-on-demand products from KoalaTeaTech."
   >
 
-  <title>Shop | KoalaTeaTech</title>
+  <title>Shop | Chance Valdez</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="shop.css">
+  <!-- Main website styles -->
+  <link rel="stylesheet" href="style.css?v=2">
+
+  <!-- Shop-specific styles -->
+  <link rel="stylesheet" href="shop.css?v=2">
 </head>
 
 <body>
+
+  <!-- =====================================================
+       OPTIONS MENU
+       This is intended to match the menu on your main site.
+       ===================================================== -->
+
+  <button
+    id="menu-toggle"
+    class="menu-toggle"
+    type="button"
+    aria-label="Open site menu"
+    aria-expanded="false"
+    aria-controls="options-menu"
+  >
+    ☰
+  </button>
+
+  <aside
+    id="options-menu"
+    class="options-menu"
+    aria-label="Site options"
+  >
+    <button
+      id="theme-toggle"
+      class="menu-link theme-toggle"
+      type="button"
+    >
+      🌙 Dark Mode
+    </button>
+
+    <a class="menu-link" href="index.html#about">
+      About
+    </a>
+
+    <a class="menu-link" href="index.html#skills">
+      Skills
+    </a>
+
+    <a
+      class="menu-link"
+      href="shop.html"
+      aria-current="page"
+    >
+      Shop
+    </a>
+
+    <a class="menu-link" href="index.html#projects">
+      Projects
+    </a>
+
+    <a class="menu-link" href="index.html#contact">
+      Contact
+    </a>
+
+    <a class="menu-link" href="gallery.html">
+      Image Library
+    </a>
+  </aside>
+
+  <!-- =====================================================
+       PAGE HEADER
+       ===================================================== -->
+
   <header class="shop-header">
-    <nav class="shop-nav" aria-label="Main navigation">
+    <div class="shop-header-content">
       <a class="shop-brand" href="index.html">
-        KoalaTeaTech
+        Chance Valdez
       </a>
 
-      <div class="shop-nav-links">
-        <a href="index.html">Home</a>
-        <a href="shop.html" aria-current="page">Shop</a>
+      <p class="shop-tagline">
+        IT Support | Systems Administration | Creative Professional
+      </p>
+
+      <nav
+        class="shop-nav"
+        aria-label="Shop navigation"
+      >
+        <a href="index.html">
+          Home
+        </a>
+
+        <a
+          href="shop.html"
+          aria-current="page"
+        >
+          Shop
+        </a>
 
         <button
           id="cart-button"
@@ -38,29 +119,50 @@
           disabled
         >
           Cart
-          <span id="cart-count" class="cart-count">0</span>
+
+          <span
+            id="cart-count"
+            class="cart-count"
+          >
+            0
+          </span>
         </button>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
+
+  <!-- =====================================================
+       MAIN SHOP CONTENT
+       ===================================================== -->
 
   <main>
     <section class="shop-hero">
       <div class="shop-hero-content">
-        <p class="shop-eyebrow">PRINT-ON-DEMAND SHOP</p>
+        <p class="shop-eyebrow">
+          PRINT-ON-DEMAND SHOP
+        </p>
 
-        <h1>Products made when you order</h1>
+        <h1>
+          Products made when you order
+        </h1>
 
         <p>
           Browse original apparel, accessories, home goods,
-          and gifts created through KoalaTeaTech.
+          gifts, and other products created through KoalaTeaTech.
         </p>
       </div>
     </section>
 
-    <section class="shop-controls" aria-label="Product controls">
+    <!-- Search and sorting -->
+
+    <section
+      class="shop-controls"
+      aria-label="Product search and sorting"
+    >
       <div class="search-wrapper">
-        <label for="product-search">Search products</label>
+        <label for="product-search">
+          Search products
+        </label>
 
         <input
           id="product-search"
@@ -71,19 +173,49 @@
       </div>
 
       <div class="sort-wrapper">
-        <label for="product-sort">Sort by</label>
+        <label for="product-sort">
+          Sort by
+        </label>
 
         <select id="product-sort">
-          <option value="featured">Featured</option>
-          <option value="price-low">Price: low to high</option>
-          <option value="price-high">Price: high to low</option>
-          <option value="name">Name</option>
+          <option value="featured">
+            Featured
+          </option>
+
+          <option value="price-low">
+            Price: low to high
+          </option>
+
+          <option value="price-high">
+            Price: high to low
+          </option>
+
+          <option value="name">
+            Name
+          </option>
         </select>
       </div>
     </section>
 
-    <section class="shop-section">
-      <div id="shop-status" class="shop-status" role="status">
+    <!-- Product results -->
+
+    <section
+      class="shop-section"
+      aria-labelledby="products-heading"
+    >
+      <h2
+        id="products-heading"
+        class="visually-hidden"
+      >
+        Products
+      </h2>
+
+      <div
+        id="shop-status"
+        class="shop-status"
+        role="status"
+        aria-live="polite"
+      >
         Loading products…
       </div>
 
@@ -95,12 +227,38 @@
     </section>
   </main>
 
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <footer class="shop-footer">
     <p>
       Products are manufactured and shipped on demand.
     </p>
+
+    <p>
+      © <span id="current-year"></span> Chance Valdez
+    </p>
   </footer>
 
-  <script src="shop.js"></script>
+  <!-- =====================================================
+       SCRIPTS
+       Load the main site script first so theme and menu
+       behavior are available before the shop loads.
+       ===================================================== -->
+
+  <script src="script.js?v=2"></script>
+  <script src="shop.js?v=2"></script>
+
+  <script>
+    const currentYearElement =
+      document.getElementById("current-year");
+
+    if (currentYearElement) {
+      currentYearElement.textContent =
+        new Date().getFullYear();
+    }
+  </script>
+
 </body>
 </html>
