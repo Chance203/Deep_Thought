@@ -1,5 +1,5 @@
 const WORKER_BASE_URL =
-  "https://REPLACE-WITH-YOUR-WORKER.workers.dev";
+  "https://chance-shop-api.koalateatech.workers.dev";
 
 const PRODUCTS_ENDPOINT =
   `${WORKER_BASE_URL}/api/products`;
