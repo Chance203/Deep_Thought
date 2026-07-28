@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Shop original apparel, accessories, gifts, and designs from KoalaTeaTech."
+  >
+
+  <title>Shop | KoalaTeaTech</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+  <header class="shop-header">
+    <nav class="shop-nav" aria-label="Main navigation">
+      <a class="shop-brand" href="index.html">
+        KoalaTeaTech
+      </a>
+
+      <div class="shop-nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" aria-current="page">Shop</a>
+
+        <button
+          id="cart-button"
+          class="cart-button"
+          type="button"
+          aria-label="Open shopping cart"
+          disabled
+        >
+          Cart
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="shop-hero-content">
+        <p class="shop-eyebrow">PRINT-ON-DEMAND SHOP</p>
+
+        <h1>Products made when you order</h1>
+
+        <p>
+          Browse original apparel, accessories, home goods,
+          and gifts created through KoalaTeaTech.
+        </p>
+      </div>
+    </section>
+
+    <section class="shop-controls" aria-label="Product controls">
+      <div class="search-wrapper">
+        <label for="product-search">Search products</label>
+
+        <input
+          id="product-search"
+          type="search"
+          placeholder="Search by product name"
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="sort-wrapper">
+        <label for="product-sort">Sort by</label>
+
+        <select id="product-sort">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: low to high</option>
+          <option value="price-high">Price: high to low</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <div id="shop-status" class="shop-status" role="status">
+        Loading products…
+      </div>
+
+      <div
+        id="product-grid"
+        class="product-grid"
+        aria-live="polite"
+      ></div>
+    </section>
+  </main>
+
+  <footer class="shop-footer">
+    <p>
+      Products are manufactured and shipped on demand.
+    </p>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>
