@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="View product details and available options from KoalaTeaTech."
+  >
+
+  <title>Product | Chance Valdez</title>
+
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="product.css?v=1">
+</head>
+
+<body>
+
+  <button
+    id="menu-toggle"
+    class="menu-toggle"
+    type="button"
+    aria-label="Open site menu"
+    aria-expanded="false"
+    aria-controls="options-menu"
+  >
+    ☰
+  </button>
+
+  <aside
+    id="options-menu"
+    class="options-menu"
+    aria-label="Site options"
+  >
+    <button
+      id="theme-toggle"
+      class="menu-link theme-toggle"
+      type="button"
+    >
+      🌙 Dark Mode
+    </button>
+
+    <a class="menu-link" href="index.html#about">
+      About
+    </a>
+
+    <a class="menu-link" href="index.html#skills">
+      Skills
+    </a>
+
+    <a class="menu-link" href="shop.html">
+      Shop
+    </a>
+
+    <a class="menu-link" href="index.html#projects">
+      Projects
+    </a>
+
+    <a class="menu-link" href="index.html#contact">
+      Contact
+    </a>
+
+    <a class="menu-link" href="gallery.html">
+      Image Library
+    </a>
+  </aside>
+
+  <header class="product-header">
+    <div class="product-header-content">
+      <a class="product-brand" href="index.html">
+        Chance Valdez
+      </a>
+
+      <p class="product-tagline">
+        IT Support | Systems Administration | Creative Professional
+      </p>
+
+      <nav
+        class="product-nav"
+        aria-label="Product navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+
+        <button
+          id="cart-button"
+          class="cart-button"
+          type="button"
+          disabled
+        >
+          Cart
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div id="product-status" class="product-status" role="status">
+      Loading product…
+    </div>
+
+    <section
+      id="product-container"
+      class="product-container"
+      hidden
+    >
+      <div class="product-gallery">
+        <div class="main-image-wrapper">
+          <img
+            id="main-product-image"
+            class="main-product-image"
+            src=""
+            alt=""
+          >
+        </div>
+
+        <div
+          id="thumbnail-list"
+          class="thumbnail-list"
+          aria-label="Product images"
+        ></div>
+      </div>
+
+      <div class="product-information">
+        <a class="back-to-shop" href="shop.html">
+          ← Back to shop
+        </a>
+
+        <h1 id="product-title"></h1>
+
+        <p id="product-price" class="product-price"></p>
+
+        <div
+          id="product-description"
+          class="product-description"
+        ></div>
+
+        <div class="variant-section">
+          <label for="variant-select">
+            Choose an option
+          </label>
+
+          <select id="variant-select">
+            <option value="">
+              Select an option
+            </option>
+          </select>
+        </div>
+
+        <div class="quantity-section">
+          <label for="product-quantity">
+            Quantity
+          </label>
+
+          <input
+            id="product-quantity"
+            type="number"
+            min="1"
+            max="10"
+            value="1"
+          >
+        </div>
+
+        <button
+          id="add-to-cart-button"
+          class="add-to-cart-button"
+          type="button"
+          disabled
+        >
+          Cart coming soon
+        </button>
+
+        <p class="fulfillment-note">
+          This product is manufactured after your order is placed.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="product-error"
+      class="product-error"
+      hidden
+    >
+      <h1>Product unavailable</h1>
+
+      <p>
+        This product could not be loaded.
+      </p>
+
+      <a href="shop.html">
+        Return to the shop
+      </a>
+    </section>
+  </main>
+
+  <footer class="product-footer">
+    <p>
+      Products are manufactured and shipped on demand.
+    </p>
+
+    <p>
+      © <span id="current-year"></span> Chance Valdez
+    </p>
+  </footer>
+
+  <script src="script.js?v=3"></script>
+  <script src="product.js?v=1"></script>
+
+  <script>
+    const currentYearElement =
+      document.getElementById("current-year");
+
+    if (currentYearElement) {
+      currentYearElement.textContent =
+        new Date().getFullYear();
+    }
+  </script>
+
+</body>
+</html>
