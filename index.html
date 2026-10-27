@@ -1,245 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- ==========================================
+       PAGE INFORMATION
+  ========================================== -->
+
   <meta charset="UTF-8" />
 
-  <!-- Makes the site work better on phones/tablets -->
+  <!-- Mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Chance Valdez's personal portfolio showcasing IT support, systems administration, professional development, creative projects, and technical skills."
+  />
 
   <title>Chance Valdez | Portfolio</title>
 
-  <!-- Connects this HTML file to the CSS styling file -->
+  <!-- Main website stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
-  <div class="options-menu">
-  <button id="options-toggle" class="options-toggle" aria-label="Open options menu">
-    ☰
-  </button>
 
-  <div id="options-panel" class="options-panel">
-    <button id="theme-toggle" class="theme-toggle">
-      🌙 Dark Mode
+  <!-- ==========================================
+       OPTIONS MENU
+  ========================================== -->
+
+  <div class="options-menu">
+
+    <button
+      id="options-toggle"
+      class="options-toggle"
+      aria-label="Open options menu"
+      aria-controls="options-panel"
+      aria-expanded="false"
+    >
+      ☰
     </button>
 
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="shop.html">Shop</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="Secondary Page/gallery.html">Image Library</a>
+    <div id="options-panel" class="options-panel">
+
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="theme-toggle">
+        🌙 Dark Mode
+      </button>
+
+      <!-- Navigation Links -->
+      <a href="index.html">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="shop.html">Shop</a>
+
+      <a href="Secondary%20Page/gallery.html">Image Library</a>
+
+      <a href="links/">Links</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
   </div>
-</div>
+
+
+  <!-- ==========================================
+       WEBSITE HEADER
+  ========================================== -->
 
   <header>
-  <h1>Chance Valdez</h1>
-  <p>IT Support | Systems Administration | Creative Professional</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <h1>Chance Valdez</h1>
+
+    <p>
+      IT Support | Systems Administration | Creative Professional
+    </p>
+
+
+    <!-- ==========================================
+         MAIN NAVIGATION
+    ========================================== -->
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="shop.html">Shop</a>
+
+      <a href="Secondary%20Page/gallery.html">Gallery</a>
+
+      <a href="links/">Links</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
 
   </header>
 
+
+  <!-- ==========================================
+       MAIN WEBSITE CONTENT
+  ========================================== -->
+
   <main>
+
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+    ========================================== -->
+
     <section id="about" class="reveal">
-  <h2>About Me</h2>
+
+      <h2>About Me</h2>
+
       <p>
-  I am building this website as a personal portfolio to highlight my work in
-  technical support, systems administration, professional development, and
-  creative projects. This site will continue to grow as I add new projects,
-  experience, and resources over time.
-  <br>
-  Professional IT Support, Amatuer Balloon Twisting Hobbyist, and Supporter of all dad jokes
-</p>
+        I am building this website as a personal portfolio to highlight my work in
+        technical support, systems administration, professional development, and
+        creative projects.
 
-<p>
-  You can also connect with me or view additional work here:
-</p>
+        This site will continue to grow as I add new projects,
+        experience, and resources over time.
 
-<ul class="profile-links">
-  <li>
-    <a href="https://linkedin.chancevaldez.com" target="_blank" rel="noopener noreferrer">
-      LinkedIn
-    </a>
-  </li>
-  <li>
-    <a href="https://www.facebook.com/chance.valdez" target="_blank" rel="noopener noreferrer">
-      Facebook
-    </a>
-  </li>
-  <li>
-    <a href="https://chancevaldez.com" target="_blank" rel="noopener noreferrer">
-      Domain
-    </a>
-  </li>
-</ul>
+        <br><br>
 
-      <!-- Future expansion:
-           Add a stronger professional summary here.
-           This can be tailored toward IT, systems administration, or art/business. -->
+        Professional IT Support, Amateur Balloon Twisting Hobbyist,
+        and Supporter of all dad jokes.
+      </p>
+
+      <p>
+        You can also connect with me or view additional work here:
+      </p>
+
+
+      <!-- SOCIAL AND PROFESSIONAL LINKS -->
+
+      <ul class="profile-links">
+
+        <li>
+          <a
+            href="https://linkedin.chancevaldez.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.facebook.com/chance.valdez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/Chance203"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+
+        <li>
+          <a href="links/">
+            All My Links
+          </a>
+        </li>
+
+      </ul>
+
     </section>
+
+
+
+    <!-- ==========================================
+         SKILLS SECTION
+    ========================================== -->
 
     <section id="skills" class="reveal">
-  <h2>Skills</h2>
 
-  <p class="section-intro">
-    A practical overview of the technical, troubleshooting, customer service,
-    and creative skills I use to solve problems, support people, and continue growing professionally.
-  </p>
+      <h2>Skills</h2>
 
-  <div class="skills-layout">
-
-    <div class="skill-group">
-      <h3>Technical Troubleshooting</h3>
-      <p>
-        Confident diagnosing hardware, software, account access, workstation,
-        and user support issues while learning new tools and technical ecosystems quickly.
+      <p class="section-intro">
+        A practical overview of the technical, troubleshooting,
+        customer service, and creative skills I use to solve problems,
+        support people, and continue growing professionally.
       </p>
-    </div>
 
-    <div class="skill-group">
-      <h3>Customer Support</h3>
-      <p>
-        Comfortable working directly with users, providing patient and dedicated service
-        while resolving complicated technical issues in a clear and timely manner.
-      </p>
-    </div>
 
-    <div class="skill-group">
-      <h3>Ticket Management</h3>
-      <p>
-        Three years of Tier 1 Technician experience managing roughly 20–30 tickets daily,
-        balancing efficiency, documentation, follow-through, and quality of support.
-      </p>
-    </div>
+      <div class="skills-layout">
 
-    <div class="skill-group">
-      <h3>Professional Growth</h3>
-      <p>
-        Actively growing my technical knowledge and building a project portfolio to better
-        document my progress, experience, and hands-on skills.
-      </p>
-    </div>
 
-    <div class="skill-group featured-skill">
-      <h3>Creative Problem Solving</h3>
-      <p>
-        I enjoy creative and hands-on challenges, including balloon twisting, volunteer work,
-        solving a Rubik’s cube in under three minutes, playing ukulele, building and repairing
-        computers, and explaining complex technical ideas through analogies and metaphors.
-      </p>
-    </div>
+        <!-- TECHNICAL TROUBLESHOOTING -->
 
-  </div>
-</section>
+        <div class="skill-group">
+
+          <h3>Technical Troubleshooting</h3>
+
+          <p>
+            Confident diagnosing hardware, software, account access,
+            workstation, and user support issues while learning
+            new tools and technical ecosystems quickly.
+          </p>
+
+        </div>
+
+
+        <!-- CUSTOMER SUPPORT -->
+
+        <div class="skill-group">
+
+          <h3>Customer Support</h3>
+
+          <p>
+            Comfortable working directly with users, providing patient
+            and dedicated service while resolving complicated technical
+            issues in a clear and timely manner.
+          </p>
+
+        </div>
+
+
+        <!-- TICKET MANAGEMENT -->
+
+        <div class="skill-group">
+
+          <h3>Ticket Management</h3>
+
+          <p>
+            Three years of Tier 1 Technician experience managing
+            roughly 20–30 tickets daily, balancing efficiency,
+            documentation, follow-through, and quality of support.
+          </p>
+
+        </div>
+
+
+        <!-- PROFESSIONAL GROWTH -->
+
+        <div class="skill-group">
+
+          <h3>Professional Growth</h3>
+
+          <p>
+            Actively growing my technical knowledge and building
+            a project portfolio to better document my progress,
+            experience, and hands-on skills.
+          </p>
+
+        </div>
+
+
+        <!-- CREATIVE PROBLEM SOLVING -->
+
+        <div class="skill-group featured-skill">
+
+          <h3>Creative Problem Solving</h3>
+
+          <p>
+            I enjoy creative and hands-on challenges, including balloon
+            twisting, volunteer work, solving a Rubik’s cube in under
+            three minutes, playing ukulele, building and repairing
+            computers, and explaining complex technical ideas through
+            analogies and metaphors.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         PROJECTS SECTION
+    ========================================== -->
 
     <section id="projects" class="reveal">
-  <h2>Projects</h2>
 
-  <p class="section-intro">
-    A growing collection of projects, coursework, and professional development.
-  </p>
+      <h2>Projects</h2>
 
-  <div class="project-grid">
-
-    <article class="project-card">
-      <h3>Personal Website</h3>
-      <p>Building and refining my personal website as a hands-on project to strengthen my web and technical skills while creating a central place to document projects, track growth, and showcase the knowledge and experience I’ve gained throughout my career.</p>
-      <div class="project-tags">
-      </div>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Website.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
-    </article>
-
-    <article class="project-card">
-      <h3>Harvard CS50</h3>
-      <p>Working through Harvard’s CS50 course to strengthen my computer science fundamentals, expand my technical knowledge, and become a more effective and efficient technical professional.</p>
-      <div class="project-tags">
-      </div>
-      <br>
-      <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" rel="noopener noreferrer" class="project-link">Details</a>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/CS50%20Studies.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
-    </article>
-
-    <article class="project-card">
-      <h3>Domain Management</h3>
-      <p>Learning how to manage and make the most of my domain by documenting setup, changes, experiments, and new ways I can use it as my website and projects grow.</p>
-      <div class="project-tags">
-      </div>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Domain.txt" target="_blank" rel="noopener noreferrer" class="project-link">Log</a>
-    </article>
-
-    <article class="project-card">
-      <h3>Freelance IT Support Work</h3>
-      <p>A collection of IT projects completed for family, friends, and independent clients, documenting the technical solutions, troubleshooting, and customer support skills developed through hands-on work. This section serves as a portfolio of real-world experience across problem-solving, system support, and client-focused service.</p>
-      <div class="project-tags">
-      </div>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Freelance%20IT%20Work.txt" class="project-link">Log</a>
-    </article>
-
-    <article class="project-card">
-      <h3>Balloon Twisting</h3>
-      <p>A space to document my growth as a balloon artist—tracking new designs, techniques, problem-solving, and lessons learned along the way. This section highlights the challenges, creative adjustments, and skill development involved in improving both the quality of my work and the experience I provide for clients.</p>
-      <div class="project-tags">
-      </div>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Balloon%20Twisting.txt" class="project-link">Log</a>
-    </article>
-
-    <article class="project-card">
-      <h3>Goals</h3>
-      <p>A dedicated space to document the personal and professional goals I’m actively working toward. This section helps me track progress, stay intentional about growth, and reflect on the milestones, habits, and lessons that shape both my career development and personal life.</p>
-      <div class="project-tags">
-      </div>
-      <a href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Goals.txt" class="project-link">Log</a>
-    </article>
-
-  </div>
-
-      <!-- Future expansion:
-           Add cards for each project:
-           - GitHub project
-           - Home lab
-           - Website build
-           - Resume/career project
-           - Caricature business page -->
-    </section>
-
-    <section id="contact" class="reveal">
-      <h2>Contact</h2>
-        <div class="contact-buttons">
-          Email:
-    <a href="mailto:valdezchancer@gmail.com" class="contact-button">
-        valdezchancer@gmail.com
-    </a>
-</div>
-
-<p id="copy-message"></p>
-      <br>Phone: 231.327.8398
+      <p class="section-intro">
+        A growing collection of projects, coursework,
+        and professional development.
       </p>
 
-      <!-- Future expansion:
-           Add links to:
-           - LinkedIn
-           - GitHub
-           - Resume PDF
-           - Art portfolio/social pages -->
+
+      <div class="project-grid">
+
+
+        <!-- PERSONAL WEBSITE -->
+
+        <article class="project-card">
+
+          <h3>Personal Website</h3>
+
+          <p>
+            Building and refining my personal website as a hands-on
+            project to strengthen my web and technical skills while
+            creating a central place to document projects, track growth,
+            and showcase the knowledge and experience I've gained
+            throughout my career.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Website.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+
+        <!-- HARVARD CS50 -->
+
+        <article class="project-card">
+
+          <h3>Harvard CS50</h3>
+
+          <p>
+            Working through Harvard's CS50 course to strengthen
+            my computer science fundamentals, expand my technical
+            knowledge, and become a more effective and efficient
+            technical professional.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <br>
+
+          <a
+            href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Details
+          </a>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/CS50%20Studies.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+
+        <!-- DOMAIN MANAGEMENT -->
+
+        <article class="project-card">
+
+          <h3>Domain Management</h3>
+
+          <p>
+            Learning how to manage and make the most of my domain
+            by documenting setup, changes, experiments, and new
+            ways I can use it as my website and projects grow.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Domain.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+
+        <!-- FREELANCE IT SUPPORT -->
+
+        <article class="project-card">
+
+          <h3>Freelance IT Support Work</h3>
+
+          <p>
+            A collection of IT projects completed for family,
+            friends, and independent clients, documenting the
+            technical solutions, troubleshooting, and customer
+            support skills developed through hands-on work.
+
+            This section serves as a portfolio of real-world
+            experience across problem-solving, system support,
+            and client-focused service.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Freelance%20IT%20Work.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+
+        <!-- BALLOON TWISTING -->
+
+        <article class="project-card">
+
+          <h3>Balloon Twisting</h3>
+
+          <p>
+            A space to document my growth as a balloon artist—tracking
+            new designs, techniques, problem-solving, and lessons
+            learned along the way.
+
+            This section highlights the challenges, creative adjustments,
+            and skill development involved in improving both the quality
+            of my work and the experience I provide for clients.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Balloon%20Twisting.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+
+        <!-- GOALS -->
+
+        <article class="project-card">
+
+          <h3>Goals</h3>
+
+          <p>
+            A dedicated space to document the personal and professional
+            goals I'm actively working toward.
+
+            This section helps me track progress, stay intentional
+            about growth, and reflect on the milestones, habits,
+            and lessons that shape both my career development
+            and personal life.
+          </p>
+
+          <div class="project-tags"></div>
+
+          <a
+            href="https://github.com/Chance203/Deep_Thought/blob/main/Journal/Goals.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Log
+          </a>
+
+        </article>
+
+
+      </div>
+
     </section>
+
+
+
+    <!-- ==========================================
+         CONTACT SECTION
+    ========================================== -->
+
+    <section id="contact" class="reveal">
+
+      <h2>Contact</h2>
+
+
+      <!-- EMAIL CONTACT -->
+
+      <div class="contact-buttons">
+
+        Email:
+
+        <a
+          href="mailto:valdezchancer@gmail.com"
+          class="contact-button"
+        >
+          valdezchancer@gmail.com
+        </a>
+
+      </div>
+
+
+      <!-- MESSAGE USED BY EXISTING JAVASCRIPT -->
+
+      <p id="copy-message"></p>
+
+
+      <!-- PHONE CONTACT -->
+
+      <p>
+        Phone: 231.327.8398
+      </p>
+
+
+      <!-- ADDITIONAL CONTACT OPTIONS -->
+
+      <p>
+        You can also find my social media profiles
+        and professional links on my
+        <a href="links/">Links Page</a>.
+      </p>
+
+    </section>
+
   </main>
 
+
+
+  <!-- ==========================================
+       WEBSITE FOOTER
+  ========================================== -->
+
   <footer>
-    <p>&copy; 2026 Chance Valdez. All rights reserved.</p>
+
+    <p>
+      &copy; 2026 Chance Valdez. All rights reserved.
+    </p>
+
   </footer>
 
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
- ↑
-</button>
-  
-  <!-- JavaScript file for future features -->
+
+
+  <!-- ==========================================
+       BACK TO TOP BUTTON
+  ========================================== -->
+
+  <button
+    id="back-to-top"
+    class="back-to-top"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+
+
+  <!-- ==========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <!-- Existing website functionality:
+       - Dark Mode
+       - Options Menu
+       - Scroll Reveal
+       - Back to Top
+       - Email Copy Functionality
+  -->
+
   <script src="script.js"></script>
 
 </body>
+
 </html>
